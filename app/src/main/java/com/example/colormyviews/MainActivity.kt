@@ -26,6 +26,15 @@ class MainActivity : AppCompatActivity() {
             R.id.box_four_text -> view.setBackgroundColor(Color.MAGENTA)
             R.id.box_five_text -> view.setBackgroundColor(Color.BLUE)
 
+            R.id.box_six_text -> view.setBackgroundColor(Color.RED)
+            R.id.box_seven_text -> view.setBackgroundColor(Color.YELLOW)
+            R.id.box_eight_text -> view.setBackgroundColor(Color.BLUE)
+            R.id.box_nine_text -> view.setBackgroundColor(Color.YELLOW)
+            R.id.box_ten_text -> view.setBackgroundColor(Color.DKGRAY)
+            R.id.box_eleven_text -> view.setBackgroundColor(Color.MAGENTA)
+            R.id.box_twelve_text -> view.setBackgroundColor(Color.BLUE)
+            R.id.box_thirteen_text -> view.setBackgroundColor(Color.DKGRAY)
+
             // Boxes using custom colors for background
             R.id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
             R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
@@ -42,6 +51,14 @@ class MainActivity : AppCompatActivity() {
         val boxThreeText = findViewById<TextView>(R.id.box_three_text)
         val boxFourText = findViewById<TextView>(R.id.box_four_text)
         val boxFiveText = findViewById<TextView>(R.id.box_five_text)
+        val boxSixText = findViewById<TextView>(R.id.box_six_text)
+        val boxSevenText = findViewById<TextView>(R.id.box_seven_text)
+        val boxEightText = findViewById<TextView>(R.id.box_eight_text)
+        val boxNineText = findViewById<TextView>(R.id.box_nine_text)
+        val boxTenText = findViewById<TextView>(R.id.box_ten_text)
+        val boxElevenText = findViewById<TextView>(R.id.box_eleven_text)
+        val boxTwelveText = findViewById<TextView>(R.id.box_twelve_text)
+        val boxThirteenText = findViewById<TextView>(R.id.box_thirteen_text)
 
         val rootConstraintLayout = findViewById<View>(R.id.constraint_layout)
 
@@ -51,7 +68,9 @@ class MainActivity : AppCompatActivity() {
 
         val clickableViews: List<View> =
             listOf(boxOneText, boxTwoText, boxThreeText,
-                boxFourText, boxFiveText, rootConstraintLayout,
+                boxFourText, boxFiveText, boxSixText, boxSevenText,
+                boxEightText, boxNineText, boxTenText, boxElevenText,
+                boxTwelveText, boxThirteenText, rootConstraintLayout,
                 redButton, greenButton, yellowButton
             )
 
